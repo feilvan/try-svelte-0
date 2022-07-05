@@ -12,7 +12,11 @@ const config = {
   ],
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      // default options are shown
+      out: 'build',
+      deps: './deps.ts' // (relative to adapter-deno package)
+    }),
 
     // Override http methods in the Todo forms
     methodOverride: {

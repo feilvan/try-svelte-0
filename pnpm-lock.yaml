@@ -16,6 +16,7 @@ specifiers:
   prettier: ^2.6.2
   prettier-plugin-svelte: ^2.7.0
   svelte: ^3.46.0
+  svelte-adapter-deno: ^0.6.2
   svelte-check: ^2.7.1
   svelte-preprocess: ^4.10.6
   tailwindcss: ^3.1.4
@@ -40,6 +41,7 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_nakrehnrzdf7fdea5k3a4dfy4m
   svelte: 3.48.0
+  svelte-adapter-deno: 0.6.2
   svelte-check: 2.8.0_s3dopqgs4h45owyu2kxaf6kyfu
   svelte-preprocess: 4.10.7_jr4mgafwdbjtobsadg2hrd5qfy
   tailwindcss: 3.1.4
@@ -2199,6 +2201,13 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /svelte-adapter-deno/0.6.2:
+    resolution: {integrity: sha512-6rQpfafU41HlIb0LqubmeHSRX5sajVcmxO+ovqlvGGWQ4TyyJL+OUXKVmQL6yma1hSgSC+V5mYkF8vFZ40fOEA==}
+    dependencies:
+      esbuild: 0.14.47
+      tiny-glob: 0.2.9
     dev: true
 
   /svelte-check/2.8.0_s3dopqgs4h45owyu2kxaf6kyfu:
