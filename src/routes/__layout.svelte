@@ -1,38 +1,25 @@
+<script lang="ts">
+	import '../app.css';
+</script>
+
+<svelte:head>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</svelte:head>
+
 <main>
 	<slot />
+	<footer>
+		<span>©{new Date().getFullYear()} truclr</span>
+	</footer>
 </main>
-
-<footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
 
 <style>
 	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 1024px;
-		margin: 0 auto;
-		box-sizing: border-box;
+		@apply flex flex-1 flex-col p-4 w-full h-screen max-w-5xl my-0 mx-auto;
 	}
 
 	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 40px;
+		@apply flex flex-col justify-center items-center;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
-	}
 </style>

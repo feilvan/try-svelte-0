@@ -8,15 +8,12 @@
 </svelte:head>
 
 <section>
-	<span>asdsdj</span>
+	<img src="/images/dino.svg" alt="Chromium T-rex"/>
+	<span class=" font-bold mt-8">rraawwrr!</span>
 </section>
 
 <style>
 	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+		@apply flex flex-col flex-1 justify-center items-center;
 	}
 </style>
