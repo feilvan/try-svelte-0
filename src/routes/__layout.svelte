@@ -1,10 +1,13 @@
 <script lang="ts">
 	import '../app.css';
-	window.addEventListener('resize', () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	});
+	if (typeof window !== 'undefined') {
+		//here `window` is available
+		window.addEventListener('resize', () => {
+			// We execute the same script as before
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+	}
 </script>
 
 <svelte:head>
