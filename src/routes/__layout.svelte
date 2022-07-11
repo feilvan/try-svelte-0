@@ -19,9 +19,9 @@
 
 <main>
 	<header class="flex flex-row relative cornerTop">
-		<div class="flex flex-row relative justify-between uppercase border p-4 w-full cornerBottom">
+		<div class="flex flex-row relative justify-between p-4 w-full cornerBottom bg-yellow-400 text-black">
 			<div>machined monster</div>
-			<div>in progress ...</div>
+			<div>soon™</div>
 		</div>
 	</header>
 	<div class="flex flex-1 relative cornerTop my-4">
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	<footer>
-		<span>44exa</span>
+		<span>44</span>
 		<span>{new Date().getUTCFullYear()}</span>
 	</footer>
 </main>
